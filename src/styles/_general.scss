@@ -1,0 +1,26 @@
+.item_product {
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  img {
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover .btn_view {
+    transition: all 0.5s ease-in-out;
+    right: 0;
+  }
+}
+
+.mode-theme {
+  color: var(--color-toggle);
+  font-size: 1.25rem;
+  animation: icon-dark 0.7s ease;
+}
+
+@keyframes icon-dark {
+  from {
+    transform: rotate(-120deg);
+  }
+}
